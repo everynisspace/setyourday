@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>24 Hour Planner</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<div class="app">
+  <h2>24 HOUR PLANNER</h2>
+
+  <div class="clock-wrap">
+    <div class="clock">
+      <div class="hand" id="hand"></div>
+      <div class="overlay" id="overlay"></div>
+
+      <div class="center">
+        <img src="image.png" class="wiggle">
+      </div>
+    </div>
+  </div>
+
+  <div id="nowAct"></div>
+
+<div class="top-buttons">
+
+  <button id="openPopup" class="primary">
+    + Add Activity
+  </button>
+
+  <button id="deleteAll" class="danger">
+    Delete All
+  </button>
+
+</div>
+
+  <div class="popup" id="popup">
+    <div class="popup-content">
+      <button class="close-btn" id="closePopup">✕</button>
+
+      <div class="row">
+        <div>
+          <label>Start</label>
+          <input type="time" id="start">
+        </div>
+
+        <div>
+          <label>Finish</label>
+          <input type="time" id="end">
+        </div>
+      </div>
+
+      <label>Activity</label>
+      <input type="text" id="title" maxlength="40">
+
+      <button class="primary" id="addBtn">
+        Add Activity
+      </button>
+    </div>
+  </div>
+
+  <div class="activities" id="list"></div>
+</div>
+ <script src="script.js"></script>
+</body>
+</html>
